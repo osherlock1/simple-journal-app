@@ -1,11 +1,11 @@
-import time
+import datetime
 
 #Entry Class
 class Entry:
-    def __init__(self, title : str, content : str, timestamp) -> None:
+    def __init__(self, title : str, content : str) -> None:
         self.content = content
         self.title = title
-        self.timestamp = timestamp
+        self.timestamp = datetime.datetime.now()
         #Set time to when the entry in initialized
 
     def display(self):
